@@ -1,0 +1,6 @@
+framework module Pods_TempratureApp_TempratureAppUITests {
+  umbrella header "Pods-TempratureApp-TempratureAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

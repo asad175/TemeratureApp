@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.2.2)
+  - MKBeaconXProSDK (0.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - MKBeaconXProSDK
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - MKBeaconXProSDK
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  MKBeaconXProSDK: ebebe517c1793725054bbcade04ee5699d760785
+
+PODFILE CHECKSUM: 5249829474da845ce2eab49b8c4ca566149e0a82
+
+COCOAPODS: 1.9.0

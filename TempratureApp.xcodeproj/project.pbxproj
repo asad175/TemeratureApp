@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		248FC1302515F72000067AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC12F2515F72000067AD9 /* AppDelegate.swift */; };
+		248FC1322515F72000067AD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC1312515F72000067AD9 /* SceneDelegate.swift */; };
+		248FC1342515F72000067AD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC1332515F72000067AD9 /* HomeViewController.swift */; };
+		248FC1372515F72000067AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248FC1352515F72000067AD9 /* Main.storyboard */; };
+		248FC1392515F72300067AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248FC1382515F72300067AD9 /* Assets.xcassets */; };
+		248FC13C2515F72300067AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248FC13A2515F72300067AD9 /* LaunchScreen.storyboard */; };
+		248FC1472515F72400067AD9 /* TempratureAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC1462515F72400067AD9 /* TempratureAppTests.swift */; };
+		248FC1522515F72400067AD9 /* TempratureAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC1512515F72400067AD9 /* TempratureAppUITests.swift */; };
+		248FC1652515F8FC00067AD9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC1642515F8FC00067AD9 /* Result.swift */; };
+		248FC1672515F91800067AD9 /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC1662515F91800067AD9 /* ErrorResult.swift */; };
+		248FC1692515F96400067AD9 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC1682515F96400067AD9 /* RequestHandler.swift */; };
+		248FC16B2515F9F300067AD9 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC16A2515F9F300067AD9 /* DynamicValue.swift */; };
+		248FC16D2515FAAD00067AD9 /* OpenWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC16C2515FAAD00067AD9 /* OpenWeatherService.swift */; };
+		248FC16F2515FAFD00067AD9 /* TemperatureDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC16E2515FAFD00067AD9 /* TemperatureDataModel.swift */; };
+		248FC1712516027900067AD9 /* TemperatureDataKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC1702516027900067AD9 /* TemperatureDataKeys.swift */; };
+		248FC1732516076E00067AD9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC1722516076E00067AD9 /* HomeViewModel.swift */; };
+		248FC17725160BF200067AD9 /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248FC17625160BF200067AD9 /* GenericDataSource.swift */; };
+		38D1755BDBCA585860143A5D /* Pods_TempratureAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408CDC598AC89E4DCA8146FC /* Pods_TempratureAppTests.framework */; };
+		4253C310DA6EC71B568D20EA /* Pods_TempratureApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7ECAEAD3B8A9AA96D5A6BF /* Pods_TempratureApp.framework */; };
+		B344F81A1275EE476D363BD4 /* Pods_TempratureApp_TempratureAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C850B34DA95EB5EAEA9794 /* Pods_TempratureApp_TempratureAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		248FC1432515F72400067AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 248FC1242515F72000067AD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248FC12B2515F72000067AD9;
+			remoteInfo = TempratureApp;
+		};
+		248FC14E2515F72400067AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 248FC1242515F72000067AD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248FC12B2515F72000067AD9;
+			remoteInfo = TempratureApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0630CA2D96129721B22C1AB3 /* Pods-TempratureApp-TempratureAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempratureApp-TempratureAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TempratureApp-TempratureAppUITests/Pods-TempratureApp-TempratureAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F7B6253011C279AF80BC2C3 /* Pods-TempratureApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempratureApp.release.xcconfig"; path = "Target Support Files/Pods-TempratureApp/Pods-TempratureApp.release.xcconfig"; sourceTree = "<group>"; };
+		18C163FD18643463043D1B2C /* Pods-TempratureApp-TempratureAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempratureApp-TempratureAppUITests.release.xcconfig"; path = "Target Support Files/Pods-TempratureApp-TempratureAppUITests/Pods-TempratureApp-TempratureAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		248FC12C2515F72000067AD9 /* TempratureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempratureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		248FC12F2515F72000067AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		248FC1312515F72000067AD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		248FC1332515F72000067AD9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		248FC1362515F72000067AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		248FC1382515F72300067AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		248FC13B2515F72300067AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		248FC13D2515F72300067AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248FC1422515F72400067AD9 /* TempratureAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempratureAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		248FC1462515F72400067AD9 /* TempratureAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempratureAppTests.swift; sourceTree = "<group>"; };
+		248FC1482515F72400067AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248FC14D2515F72400067AD9 /* TempratureAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempratureAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		248FC1512515F72400067AD9 /* TempratureAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempratureAppUITests.swift; sourceTree = "<group>"; };
+		248FC1532515F72400067AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248FC1642515F8FC00067AD9 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		248FC1662515F91800067AD9 /* ErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		248FC1682515F96400067AD9 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		248FC16A2515F9F300067AD9 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		248FC16C2515FAAD00067AD9 /* OpenWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherService.swift; sourceTree = "<group>"; };
+		248FC16E2515FAFD00067AD9 /* TemperatureDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureDataModel.swift; sourceTree = "<group>"; };
+		248FC1702516027900067AD9 /* TemperatureDataKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureDataKeys.swift; sourceTree = "<group>"; };
+		248FC1722516076E00067AD9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		248FC17625160BF200067AD9 /* GenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
+		271B47AADA07858BFE3BE7BD /* Pods-TempratureApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempratureApp.debug.xcconfig"; path = "Target Support Files/Pods-TempratureApp/Pods-TempratureApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3E77B6D21666070BD4AC9C07 /* Pods-TempratureAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempratureAppTests.release.xcconfig"; path = "Target Support Files/Pods-TempratureAppTests/Pods-TempratureAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		408CDC598AC89E4DCA8146FC /* Pods_TempratureAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempratureAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7ECAEAD3B8A9AA96D5A6BF /* Pods_TempratureApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempratureApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0608AEB42B29098DE1D93B8 /* Pods-TempratureAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempratureAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TempratureAppTests/Pods-TempratureAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1C850B34DA95EB5EAEA9794 /* Pods_TempratureApp_TempratureAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempratureApp_TempratureAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		248FC1292515F72000067AD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4253C310DA6EC71B568D20EA /* Pods_TempratureApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248FC13F2515F72400067AD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D1755BDBCA585860143A5D /* Pods_TempratureAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248FC14A2515F72400067AD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B344F81A1275EE476D363BD4 /* Pods_TempratureApp_TempratureAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01156403B662C15AEEAB48FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E7ECAEAD3B8A9AA96D5A6BF /* Pods_TempratureApp.framework */,
+				D1C850B34DA95EB5EAEA9794 /* Pods_TempratureApp_TempratureAppUITests.framework */,
+				408CDC598AC89E4DCA8146FC /* Pods_TempratureAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		248FC1232515F72000067AD9 = {
+			isa = PBXGroup;
+			children = (
+				248FC12E2515F72000067AD9 /* TempratureApp */,
+				248FC1452515F72400067AD9 /* TempratureAppTests */,
+				248FC1502515F72400067AD9 /* TempratureAppUITests */,
+				248FC12D2515F72000067AD9 /* Products */,
+				BF14E1D3A4A3B8C6F91782E4 /* Pods */,
+				01156403B662C15AEEAB48FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		248FC12D2515F72000067AD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				248FC12C2515F72000067AD9 /* TempratureApp.app */,
+				248FC1422515F72400067AD9 /* TempratureAppTests.xctest */,
+				248FC14D2515F72400067AD9 /* TempratureAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		248FC12E2515F72000067AD9 /* TempratureApp */ = {
+			isa = PBXGroup;
+			children = (
+				248FC15F2515F86B00067AD9 /* View */,
+				248FC1602515F87100067AD9 /* ViewModel */,
+				248FC1612515F87700067AD9 /* Model */,
+				248FC1622515F87C00067AD9 /* Service */,
+				248FC12F2515F72000067AD9 /* AppDelegate.swift */,
+				248FC1312515F72000067AD9 /* SceneDelegate.swift */,
+				248FC1352515F72000067AD9 /* Main.storyboard */,
+				248FC1382515F72300067AD9 /* Assets.xcassets */,
+				248FC13A2515F72300067AD9 /* LaunchScreen.storyboard */,
+				248FC13D2515F72300067AD9 /* Info.plist */,
+			);
+			path = TempratureApp;
+			sourceTree = "<group>";
+		};
+		248FC1452515F72400067AD9 /* TempratureAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				248FC1462515F72400067AD9 /* TempratureAppTests.swift */,
+				248FC1482515F72400067AD9 /* Info.plist */,
+			);
+			path = TempratureAppTests;
+			sourceTree = "<group>";
+		};
+		248FC1502515F72400067AD9 /* TempratureAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				248FC1512515F72400067AD9 /* TempratureAppUITests.swift */,
+				248FC1532515F72400067AD9 /* Info.plist */,
+			);
+			path = TempratureAppUITests;
+			sourceTree = "<group>";
+		};
+		248FC15F2515F86B00067AD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				248FC1332515F72000067AD9 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		248FC1602515F87100067AD9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				248FC1722516076E00067AD9 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		248FC1612515F87700067AD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				248FC16A2515F9F300067AD9 /* DynamicValue.swift */,
+				248FC16E2515FAFD00067AD9 /* TemperatureDataModel.swift */,
+				248FC1702516027900067AD9 /* TemperatureDataKeys.swift */,
+				248FC17625160BF200067AD9 /* GenericDataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		248FC1622515F87C00067AD9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				248FC1682515F96400067AD9 /* RequestHandler.swift */,
+				248FC16C2515FAAD00067AD9 /* OpenWeatherService.swift */,
+				248FC1632515F88100067AD9 /* Result */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		248FC1632515F88100067AD9 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				248FC1642515F8FC00067AD9 /* Result.swift */,
+				248FC1662515F91800067AD9 /* ErrorResult.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		BF14E1D3A4A3B8C6F91782E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				271B47AADA07858BFE3BE7BD /* Pods-TempratureApp.debug.xcconfig */,
+				0F7B6253011C279AF80BC2C3 /* Pods-TempratureApp.release.xcconfig */,
+				0630CA2D96129721B22C1AB3 /* Pods-TempratureApp-TempratureAppUITests.debug.xcconfig */,
+				18C163FD18643463043D1B2C /* Pods-TempratureApp-TempratureAppUITests.release.xcconfig */,
+				D0608AEB42B29098DE1D93B8 /* Pods-TempratureAppTests.debug.xcconfig */,
+				3E77B6D21666070BD4AC9C07 /* Pods-TempratureAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		248FC12B2515F72000067AD9 /* TempratureApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248FC1562515F72400067AD9 /* Build configuration list for PBXNativeTarget "TempratureApp" */;
+			buildPhases = (
+				4D389F85E4EE2A0DB0BD3787 /* [CP] Check Pods Manifest.lock */,
+				248FC1282515F72000067AD9 /* Sources */,
+				248FC1292515F72000067AD9 /* Frameworks */,
+				248FC12A2515F72000067AD9 /* Resources */,
+				7BCAF62CD6CBDB1383AFC624 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TempratureApp;
+			productName = TempratureApp;
+			productReference = 248FC12C2515F72000067AD9 /* TempratureApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		248FC1412515F72400067AD9 /* TempratureAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248FC1592515F72400067AD9 /* Build configuration list for PBXNativeTarget "TempratureAppTests" */;
+			buildPhases = (
+				60CB34AE7C510C9427817EF3 /* [CP] Check Pods Manifest.lock */,
+				248FC13E2515F72400067AD9 /* Sources */,
+				248FC13F2515F72400067AD9 /* Frameworks */,
+				248FC1402515F72400067AD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				248FC1442515F72400067AD9 /* PBXTargetDependency */,
+			);
+			name = TempratureAppTests;
+			productName = TempratureAppTests;
+			productReference = 248FC1422515F72400067AD9 /* TempratureAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		248FC14C2515F72400067AD9 /* TempratureAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248FC15C2515F72400067AD9 /* Build configuration list for PBXNativeTarget "TempratureAppUITests" */;
+			buildPhases = (
+				2548CA0AD994CF24D7827B2A /* [CP] Check Pods Manifest.lock */,
+				248FC1492515F72400067AD9 /* Sources */,
+				248FC14A2515F72400067AD9 /* Frameworks */,
+				248FC14B2515F72400067AD9 /* Resources */,
+				0D80C7A866733BF0CD2E01E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				248FC14F2515F72400067AD9 /* PBXTargetDependency */,
+			);
+			name = TempratureAppUITests;
+			productName = TempratureAppUITests;
+			productReference = 248FC14D2515F72400067AD9 /* TempratureAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		248FC1242515F72000067AD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Asad Choudhary";
+				TargetAttributes = {
+					248FC12B2515F72000067AD9 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					248FC1412515F72400067AD9 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 248FC12B2515F72000067AD9;
+					};
+					248FC14C2515F72400067AD9 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 248FC12B2515F72000067AD9;
+					};
+				};
+			};
+			buildConfigurationList = 248FC1272515F72000067AD9 /* Build configuration list for PBXProject "TempratureApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 248FC1232515F72000067AD9;
+			productRefGroup = 248FC12D2515F72000067AD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				248FC12B2515F72000067AD9 /* TempratureApp */,
+				248FC1412515F72400067AD9 /* TempratureAppTests */,
+				248FC14C2515F72400067AD9 /* TempratureAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		248FC12A2515F72000067AD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FC13C2515F72300067AD9 /* LaunchScreen.storyboard in Resources */,
+				248FC1392515F72300067AD9 /* Assets.xcassets in Resources */,
+				248FC1372515F72000067AD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248FC1402515F72400067AD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248FC14B2515F72400067AD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D80C7A866733BF0CD2E01E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempratureApp-TempratureAppUITests/Pods-TempratureApp-TempratureAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempratureApp-TempratureAppUITests/Pods-TempratureApp-TempratureAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TempratureApp-TempratureAppUITests/Pods-TempratureApp-TempratureAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2548CA0AD994CF24D7827B2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TempratureApp-TempratureAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D389F85E4EE2A0DB0BD3787 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TempratureApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60CB34AE7C510C9427817EF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TempratureAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BCAF62CD6CBDB1383AFC624 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempratureApp/Pods-TempratureApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempratureApp/Pods-TempratureApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TempratureApp/Pods-TempratureApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		248FC1282515F72000067AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FC1712516027900067AD9 /* TemperatureDataKeys.swift in Sources */,
+				248FC1732516076E00067AD9 /* HomeViewModel.swift in Sources */,
+				248FC17725160BF200067AD9 /* GenericDataSource.swift in Sources */,
+				248FC16F2515FAFD00067AD9 /* TemperatureDataModel.swift in Sources */,
+				248FC1342515F72000067AD9 /* HomeViewController.swift in Sources */,
+				248FC1672515F91800067AD9 /* ErrorResult.swift in Sources */,
+				248FC1692515F96400067AD9 /* RequestHandler.swift in Sources */,
+				248FC1302515F72000067AD9 /* AppDelegate.swift in Sources */,
+				248FC1652515F8FC00067AD9 /* Result.swift in Sources */,
+				248FC1322515F72000067AD9 /* SceneDelegate.swift in Sources */,
+				248FC16D2515FAAD00067AD9 /* OpenWeatherService.swift in Sources */,
+				248FC16B2515F9F300067AD9 /* DynamicValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248FC13E2515F72400067AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FC1472515F72400067AD9 /* TempratureAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248FC1492515F72400067AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248FC1522515F72400067AD9 /* TempratureAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		248FC1442515F72400067AD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 248FC12B2515F72000067AD9 /* TempratureApp */;
+			targetProxy = 248FC1432515F72400067AD9 /* PBXContainerItemProxy */;
+		};
+		248FC14F2515F72400067AD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 248FC12B2515F72000067AD9 /* TempratureApp */;
+			targetProxy = 248FC14E2515F72400067AD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		248FC1352515F72000067AD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248FC1362515F72000067AD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		248FC13A2515F72300067AD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248FC13B2515F72300067AD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		248FC1542515F72400067AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		248FC1552515F72400067AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		248FC1572515F72400067AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271B47AADA07858BFE3BE7BD /* Pods-TempratureApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JHV92F7FKS;
+				INFOPLIST_FILE = TempratureApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TempratureApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		248FC1582515F72400067AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F7B6253011C279AF80BC2C3 /* Pods-TempratureApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JHV92F7FKS;
+				INFOPLIST_FILE = TempratureApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TempratureApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		248FC15A2515F72400067AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0608AEB42B29098DE1D93B8 /* Pods-TempratureAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JHV92F7FKS;
+				INFOPLIST_FILE = TempratureAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TempratureAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempratureApp.app/TempratureApp";
+			};
+			name = Debug;
+		};
+		248FC15B2515F72400067AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E77B6D21666070BD4AC9C07 /* Pods-TempratureAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JHV92F7FKS;
+				INFOPLIST_FILE = TempratureAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TempratureAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempratureApp.app/TempratureApp";
+			};
+			name = Release;
+		};
+		248FC15D2515F72400067AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0630CA2D96129721B22C1AB3 /* Pods-TempratureApp-TempratureAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JHV92F7FKS;
+				INFOPLIST_FILE = TempratureAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TempratureAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TempratureApp;
+			};
+			name = Debug;
+		};
+		248FC15E2515F72400067AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C163FD18643463043D1B2C /* Pods-TempratureApp-TempratureAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JHV92F7FKS;
+				INFOPLIST_FILE = TempratureAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TempratureAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TempratureApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		248FC1272515F72000067AD9 /* Build configuration list for PBXProject "TempratureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248FC1542515F72400067AD9 /* Debug */,
+				248FC1552515F72400067AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248FC1562515F72400067AD9 /* Build configuration list for PBXNativeTarget "TempratureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248FC1572515F72400067AD9 /* Debug */,
+				248FC1582515F72400067AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248FC1592515F72400067AD9 /* Build configuration list for PBXNativeTarget "TempratureAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248FC15A2515F72400067AD9 /* Debug */,
+				248FC15B2515F72400067AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248FC15C2515F72400067AD9 /* Build configuration list for PBXNativeTarget "TempratureAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248FC15D2515F72400067AD9 /* Debug */,
+				248FC15E2515F72400067AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 248FC1242515F72000067AD9 /* Project object */;
+}

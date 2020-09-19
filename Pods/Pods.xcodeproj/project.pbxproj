@@ -1,0 +1,1397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D6DBEF5A11B4B14C595BFBE36FDF92 /* HTTPMethod.swift */; };
+		0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECF5C41AA60B8DB2E90B4CEE3DC8215 /* Combine.swift */; };
+		0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D887B75868B7D261A6F111ECCB5BF997 /* OperationQueue+Alamofire.swift */; };
+		11197178500F4C14F06EE2D79BFCC8FE /* CBPeripheral+MKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DA2B04EBE1C9D12C1129EE160DA68C /* CBPeripheral+MKAdd.m */; };
+		1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09C6453AD7E98530273095109147B62 /* AFError.swift */; };
+		13DAAE70AB13FF109F337CD7E3B4B635 /* MKBXPTaskOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A00D0B2CC57CB3E061501237DFFF1 /* MKBXPTaskOperation.m */; };
+		18E5A2BB9CBE5090C5901526088D6CD3 /* Pods-TempratureAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AFF696EB9797609150A607F482A356B /* Pods-TempratureAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE8D778159297B4C17324F354EF8C4 /* NetworkReachabilityManager.swift */; };
+		1F905AD1C0701AFB0E7816174E14550B /* MKBXPTaskOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 488B1014D97A96AE45A0BADD8B46F621 /* MKBXPTaskOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		207066BF24F5F5E099DBA4EDE4E4BFAB /* MKBXPAdopter.h in Headers */ = {isa = PBXBuildFile; fileRef = EA2829BF29992E5E1799508DE05E68E4 /* MKBXPAdopter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC90375CA6D3A9F6FE205E6ED31BA2 /* StringEncoding+Alamofire.swift */; };
+		218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6014E85B6E9015877F66CD555324E1DF /* Protected.swift */; };
+		27B24003B33800C43F51EB5FFB6F92AB /* MKBXPDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F11B3FD2314FD58CCF03EA2B596F598 /* MKBXPDataParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FEBC164ABA74ADDD9192762C6E86F /* DispatchQueue+Alamofire.swift */; };
+		29BB8D3A4CAEF6F3F695FD4349E515E5 /* MKBXPEnumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = E2AEED7C5E6A90FBC926C4F092E749B5 /* MKBXPEnumeration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B57D9EB3C62D5254BDC93078ECA3CBB /* MKBXPSDKHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 70BFDE4147B9EDB0FD125347B9F4082D /* MKBXPSDKHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3047360C97C8CD58D576D42BF34A50AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		333A611DE6A403B7D83C424F41F5BF38 /* MKBXPBaseBeacon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CC526415A15AB3A00CE16A6138E9D52 /* MKBXPBaseBeacon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4172AA5392FC71E6EF8A39CB9A7A813 /* SessionDelegate.swift */; };
+		3AE7FE63BF42C975788C094F65ECDD09 /* Pods-TempratureApp-TempratureAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE771006FD74835FD277084B65FB5AFF /* Pods-TempratureApp-TempratureAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CF7C9F2180B1EF4D55D4CD0F2754924 /* MKBXPInterface+MKConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDC8EE556E0627B6975BCF0D0BCC996 /* MKBXPInterface+MKConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C6BE3AABB11F96F42A17FD967390E5 /* MultipartFormData.swift */; };
+		47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC2739063206A6A0F0629BA98FA787 /* ServerTrustEvaluation.swift */; };
+		4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4261EFF8C93F0D33FDC6F07942A7B /* ParameterEncoder.swift */; };
+		5C8B63CDD7B478272B2DF0801530BF8B /* MKBXPCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EF05E33E296B47F29F059AF195B5AE /* MKBXPCentralManager.m */; };
+		6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EA8032EC248D64175ED956FDFDB1CB /* EventMonitor.swift */; };
+		666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3184FC0D65D41B3847DB07AA668849FD /* RedirectHandler.swift */; };
+		66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7449F8571A179CA95B120B356BCD84F5 /* Result+Alamofire.swift */; };
+		6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69544F2D0B0C1342EAF29A0D276033 /* Session.swift */; };
+		6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EBD900ED51B0FDC44AFF720ADF96EF /* RequestTaskMap.swift */; };
+		6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB4C6A2BE843BEC1DC342CE512C365 /* RequestInterceptor.swift */; };
+		72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E87DD901E7F04889513C96B4787798 /* AlamofireExtended.swift */; };
+		746E8CC40D3E44077ABE001B4FA84623 /* MKBXPProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D487D40ED7803FA2ED8402770455404 /* MKBXPProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		775E258C7F890D5AD93B2901905B9C07 /* MKBXPInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5535E4C35CDD554E73DD129F4D6420 /* MKBXPInterface.m */; };
+		7897392A54F24AE971B1956E81F1100F /* MKBXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = C169104C0F0A3BF2B97870BDB38EC82C /* MKBXPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3129DDAC55322E3330CA8351685BA214 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DDD78EE37D1502EEA9CF443206ADE7E /* MKBXPAdopter.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DAC45960A195567E6418BFC663446E /* MKBXPAdopter.m */; };
+		7E45AB3DA5C65E6C03B72430E85E847F /* Pods-TempratureApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B74CBC625118AF0891AC261E28179BA /* Pods-TempratureApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8697B619819E375B72010BD4328C87BF /* MKBeaconXProSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C5A496B03196CC82334C73F32890D7 /* MKBeaconXProSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730CBDF3DDAD20D2F2748321C26590D2 /* Notifications.swift */; };
+		911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32B0ADC408D9C7FD1C6D0CED724AA48 /* ResponseSerialization.swift */; };
+		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38039D3DC3AB8D344769AB5F790C39B /* HTTPHeaders.swift */; };
+		986335F28C10C2F7F137587F27B9B0A8 /* CBPeripheral+MKAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2EA019774AFC9E1F4B8824B0687BBC /* CBPeripheral+MKAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B515700B6457BA64E1858D88956516B9 /* URLConvertible+URLRequestConvertible.swift */; };
+		9BBC06FDDCC6611EE7E197CFF48B4665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89715495F3F817D8CC2E77146637B3 /* RetryPolicy.swift */; };
+		A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */; };
+		ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA37002B8AA7F8CA3E88C92513F720 /* CachedResponseHandler.swift */; };
+		AFD8E78279AD5C139C9A8FDA0831D7D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		B6E96B02E5CE0D37259372E11596C69C /* MKBXPInterface+MKConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D438E6703E8B95DE693C83195BBC8646 /* MKBXPInterface+MKConfig.m */; };
+		B785D518621AF86BFB6F49DCED182E67 /* MKBeaconXProSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B7B84BCE6EB61B856A94B16152F21D /* MKBeaconXProSDK-dummy.m */; };
+		BCBB7EA41F6880EFB8B3BB0EAAEC3063 /* MKBXPInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F19A90F89CA4AAD64E2E45A3D0EACEB7 /* MKBXPInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE867436C3439DEFD76871E27EB459AA /* MKBXPNormalDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D8C1DAD2A2CAF138920E2C2DC20E35 /* MKBXPNormalDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9E7C2CC6C88CF5C2D2800C12FEB9E /* Response.swift */; };
+		C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710546B4C3A4C261522AF193AC6FFEC6 /* Alamofire.swift */; };
+		C6444C143EA2E88E8A3D00D1575DD31F /* Pods-TempratureAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3186AC9B4F7D880EAB82FE1F9073D75D /* Pods-TempratureAppTests-dummy.m */; };
+		C6D2E6BC11C9F3493E8E8238F5235BFE /* MKBXPOperationIDDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F676295D6230137152C4AD00D84E8E5 /* MKBXPOperationIDDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE9A31AF657D4A1502888742BF790B8 /* Alamofire-dummy.m */; };
+		D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5BA4DCF3A6F898EFAA0B1F3A735AC5 /* MultipartUpload.swift */; };
+		D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F7BFA405C849AAA236142A68A826B6 /* ParameterEncoding.swift */; };
+		D267D8CFC19A65ED6841ACF59A1A6B3B /* MKBXPBaseBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBF2CB79641E1A4890D1694450CA5F /* MKBXPBaseBeacon.m */; };
+		D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21038F55EAA1DF8E0991BA27E0EF6D3 /* URLEncodedFormEncoder.swift */; };
+		D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D3C4B8F93A2AEE6AE028BE07476005 /* URLRequest+Alamofire.swift */; };
+		D98CA575A96C2E4F9FA5F2703CD75352 /* Pods-TempratureApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F37622E8E3D339A69D5A7A66F683F0D7 /* Pods-TempratureApp-dummy.m */; };
+		DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290838C9271E1A6D123495AC44C6D231 /* AuthenticationInterceptor.swift */; };
+		DE6D762E7C2835113512D9149994B53F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		DE777675C04A1789D35B4B5E90225DD7 /* MKBXPCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7E47DE659F5DCA5546AE4301EA72BC /* MKBXPCentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9711C5417BAA15AED562350223489D9 /* Pods-TempratureApp-TempratureAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A079147F37C611031F800A76681CC64 /* Pods-TempratureApp-TempratureAppUITests-dummy.m */; };
+		EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4403A65A898D4ECBA377F18C1E3B63E1 /* Request.swift */; };
+		F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94016A37C120274A670B68BC996E266 /* Validation.swift */; };
+		F467FDFD289BB98537A0BEAE37087A3A /* MKBXPService.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FBA9895FCC0C16F4950861E83ED843 /* MKBXPService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68785CDC9FBEB8F3878A1E29CFCDA05 /* URLSessionConfiguration+Alamofire.swift */; };
+		FE96572F8D56DD0C4DDAAC69F5559619 /* MKBXPDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C84A418F5BE77F83276F4FF7CF33F7 /* MKBXPDataParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		129D483C52EAC8FA187FE674CCAC0290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		4DB298649F508B9C76E506E14F89874F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9E5C5865BA3AB6A73C668ADCCB9C7FC;
+			remoteInfo = MKBeaconXProSDK;
+		};
+		B2A74A5A6A9990CDAD54D91854E9D8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A0DE3C915E2D76BD17C04AF9F299DD6;
+			remoteInfo = "Pods-TempratureApp";
+		};
+		BD2918AB1DB4B81F4A9C33CD7572DA6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9E5C5865BA3AB6A73C668ADCCB9C7FC;
+			remoteInfo = MKBeaconXProSDK;
+		};
+		DA6B3931EE81742DF5EE6AD9ED7D4BC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03045FC754475FB4CC289D94A5704B43 /* Pods-TempratureAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TempratureAppTests.modulemap"; sourceTree = "<group>"; };
+		04FB28E62421B71709C2A1A4D5AAA777 /* Pods-TempratureApp-TempratureAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TempratureApp-TempratureAppUITests-Info.plist"; sourceTree = "<group>"; };
+		0BEC2739063206A6A0F0629BA98FA787 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		0ECF5C41AA60B8DB2E90B4CEE3DC8215 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		1802905CE4D0B10E00BA3010C3E6EAD6 /* MKBeaconXProSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKBeaconXProSDK-prefix.pch"; sourceTree = "<group>"; };
+		1CC526415A15AB3A00CE16A6138E9D52 /* MKBXPBaseBeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPBaseBeacon.h; path = MKBeaconXProSDK/Classes/MKBXPBaseBeacon.h; sourceTree = "<group>"; };
+		1E5535E4C35CDD554E73DD129F4D6420 /* MKBXPInterface.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBXPInterface.m; path = MKBeaconXProSDK/Classes/MKBXPInterface.m; sourceTree = "<group>"; };
+		222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		23DAC45960A195567E6418BFC663446E /* MKBXPAdopter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBXPAdopter.m; path = MKBeaconXProSDK/Classes/MKBXPAdopter.m; sourceTree = "<group>"; };
+		290838C9271E1A6D123495AC44C6D231 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		2A10A7D37064386C2C2CDEEC113E5291 /* Pods_TempratureApp_TempratureAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TempratureApp_TempratureAppUITests.framework; path = "Pods-TempratureApp-TempratureAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5BA4DCF3A6F898EFAA0B1F3A735AC5 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		2CBBF2CB79641E1A4890D1694450CA5F /* MKBXPBaseBeacon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBXPBaseBeacon.m; path = MKBeaconXProSDK/Classes/MKBXPBaseBeacon.m; sourceTree = "<group>"; };
+		2D6FEBC164ABA74ADDD9192762C6E86F /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		2E50EA222081672901A1F95399D29C66 /* Pods-TempratureApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TempratureApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		2EDC8EE556E0627B6975BCF0D0BCC996 /* MKBXPInterface+MKConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKBXPInterface+MKConfig.h"; path = "MKBeaconXProSDK/Classes/MKBXPInterface+MKConfig.h"; sourceTree = "<group>"; };
+		2F11B3FD2314FD58CCF03EA2B596F598 /* MKBXPDataParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPDataParser.h; path = MKBeaconXProSDK/Classes/MKBXPDataParser.h; sourceTree = "<group>"; };
+		3129DDAC55322E3330CA8351685BA214 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		3184FC0D65D41B3847DB07AA668849FD /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		3186AC9B4F7D880EAB82FE1F9073D75D /* Pods-TempratureAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TempratureAppTests-dummy.m"; sourceTree = "<group>"; };
+		38B7B84BCE6EB61B856A94B16152F21D /* MKBeaconXProSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKBeaconXProSDK-dummy.m"; sourceTree = "<group>"; };
+		3AFF696EB9797609150A607F482A356B /* Pods-TempratureAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TempratureAppTests-umbrella.h"; sourceTree = "<group>"; };
+		4403A65A898D4ECBA377F18C1E3B63E1 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		46D3C4B8F93A2AEE6AE028BE07476005 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		488B1014D97A96AE45A0BADD8B46F621 /* MKBXPTaskOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPTaskOperation.h; path = MKBeaconXProSDK/Classes/MKBXPTaskOperation.h; sourceTree = "<group>"; };
+		49C847A3978BDED14C8CA28A8DD05ADB /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		4BCE8D778159297B4C17324F354EF8C4 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		51DA2B04EBE1C9D12C1129EE160DA68C /* CBPeripheral+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CBPeripheral+MKAdd.m"; path = "MKBeaconXProSDK/Classes/CBPeripheral+MKAdd.m"; sourceTree = "<group>"; };
+		5A079147F37C611031F800A76681CC64 /* Pods-TempratureApp-TempratureAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TempratureApp-TempratureAppUITests-dummy.m"; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EAB4C6A2BE843BEC1DC342CE512C365 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		5F676295D6230137152C4AD00D84E8E5 /* MKBXPOperationIDDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPOperationIDDefines.h; path = MKBeaconXProSDK/Classes/MKBXPOperationIDDefines.h; sourceTree = "<group>"; };
+		6014E85B6E9015877F66CD555324E1DF /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		61964DB45E18EFDED2745BBF3B26CC55 /* Pods-TempratureApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TempratureApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6404FFE25551AC606B9AC02470254EB7 /* Pods-TempratureApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TempratureApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		67FF58B0518F0D71C0DBF50F58EA6D2D /* Pods-TempratureApp-TempratureAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TempratureApp-TempratureAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		68080808E61E8BB6E543F68BBDEBFB3B /* Pods-TempratureApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TempratureApp-frameworks.sh"; sourceTree = "<group>"; };
+		692C1D9CED1DF95FE0B3B27F403680B9 /* Pods-TempratureApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TempratureApp.release.xcconfig"; sourceTree = "<group>"; };
+		6B74CBC625118AF0891AC261E28179BA /* Pods-TempratureApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TempratureApp-umbrella.h"; sourceTree = "<group>"; };
+		6CE9A31AF657D4A1502888742BF790B8 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		6D487D40ED7803FA2ED8402770455404 /* MKBXPProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPProtocols.h; path = MKBeaconXProSDK/Classes/MKBXPProtocols.h; sourceTree = "<group>"; };
+		6E88AE28FFEFCFA4A5B96D46FCB5FCAD /* MKBeaconXProSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKBeaconXProSDK.release.xcconfig; sourceTree = "<group>"; };
+		70BFDE4147B9EDB0FD125347B9F4082D /* MKBXPSDKHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPSDKHeader.h; path = MKBeaconXProSDK/Classes/MKBXPSDKHeader.h; sourceTree = "<group>"; };
+		710546B4C3A4C261522AF193AC6FFEC6 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		72AC90375CA6D3A9F6FE205E6ED31BA2 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		730CBDF3DDAD20D2F2748321C26590D2 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		73DCA19B4D25FB3939124C52973ED4CF /* Pods_TempratureAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TempratureAppTests.framework; path = "Pods-TempratureAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7449F8571A179CA95B120B356BCD84F5 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		753E691FC4938E975B0BBA240C3B124F /* Pods-TempratureApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TempratureApp.modulemap"; sourceTree = "<group>"; };
+		76C0788D8CF52B6ADBE25A6CEC5739A6 /* Pods-TempratureApp-TempratureAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TempratureApp-TempratureAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		79819D5F620F90768AACA23EB3DEAD68 /* MKBeaconXProSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MKBeaconXProSDK-Info.plist"; sourceTree = "<group>"; };
+		7C69544F2D0B0C1342EAF29A0D276033 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		7F34116FE5F8D1C53FFF156D3C1B3203 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		8378A9A606B6F65E5E21879B49CCD255 /* Pods-TempratureApp-TempratureAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TempratureApp-TempratureAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A3A00D0B2CC57CB3E061501237DFFF1 /* MKBXPTaskOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBXPTaskOperation.m; path = MKBeaconXProSDK/Classes/MKBXPTaskOperation.m; sourceTree = "<group>"; };
+		8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		8F7E47DE659F5DCA5546AE4301EA72BC /* MKBXPCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPCentralManager.h; path = MKBeaconXProSDK/Classes/MKBXPCentralManager.h; sourceTree = "<group>"; };
+		96CD8D737F87BBA4B1EA8E6AF247E119 /* MKBeaconXProSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKBeaconXProSDK.debug.xcconfig; sourceTree = "<group>"; };
+		96D8C1DAD2A2CAF138920E2C2DC20E35 /* MKBXPNormalDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPNormalDefines.h; path = MKBeaconXProSDK/Classes/MKBXPNormalDefines.h; sourceTree = "<group>"; };
+		9C2EA019774AFC9E1F4B8824B0687BBC /* CBPeripheral+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CBPeripheral+MKAdd.h"; path = "MKBeaconXProSDK/Classes/CBPeripheral+MKAdd.h"; sourceTree = "<group>"; };
+		9D1066043A6DE9650BADF69CD5CE5530 /* Pods-TempratureAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TempratureAppTests-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0EBD900ED51B0FDC44AFF720ADF96EF /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		A21038F55EAA1DF8E0991BA27E0EF6D3 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		A2A4242D961E4E0960EEA53D88B1552C /* MKBeaconXProSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MKBeaconXProSDK.modulemap; sourceTree = "<group>"; };
+		A6D43D4C487928C3DB7F6AE5E85322D2 /* MKBeaconXProSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKBeaconXProSDK.framework; path = MKBeaconXProSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77079D42E5E315C600C3FC30681DFED /* Pods_TempratureApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TempratureApp.framework; path = "Pods-TempratureApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B307C81B7959F7D4BE7841F6BE019495 /* Pods-TempratureApp-TempratureAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TempratureApp-TempratureAppUITests.modulemap"; sourceTree = "<group>"; };
+		B32B0ADC408D9C7FD1C6D0CED724AA48 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		B3C9E7C2CC6C88CF5C2D2800C12FEB9E /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		B4A14B6EB86293E9ABBDA6300D95ABB8 /* Pods-TempratureAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TempratureAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B515700B6457BA64E1858D88956516B9 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		B68785CDC9FBEB8F3878A1E29CFCDA05 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		B7E87DD901E7F04889513C96B4787798 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		B8FBA9895FCC0C16F4950861E83ED843 /* MKBXPService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPService.h; path = MKBeaconXProSDK/Classes/MKBXPService.h; sourceTree = "<group>"; };
+		C169104C0F0A3BF2B97870BDB38EC82C /* MKBXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPDefines.h; path = MKBeaconXProSDK/Classes/MKBXPDefines.h; sourceTree = "<group>"; };
+		C2C6BE3AABB11F96F42A17FD967390E5 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		C4172AA5392FC71E6EF8A39CB9A7A813 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		C58E060032B864DD8CEE4850BAF40EDE /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		C5F7BFA405C849AAA236142A68A826B6 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		C8E9668DB2506EA00D025442607C996D /* Pods-TempratureApp-TempratureAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TempratureApp-TempratureAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D34E14F3C4A94884D225078310484BCA /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		D438E6703E8B95DE693C83195BBC8646 /* MKBXPInterface+MKConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKBXPInterface+MKConfig.m"; path = "MKBeaconXProSDK/Classes/MKBXPInterface+MKConfig.m"; sourceTree = "<group>"; };
+		D5AA37002B8AA7F8CA3E88C92513F720 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		D887B75868B7D261A6F111ECCB5BF997 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		DB2C27088C006D1D135B8EC3AA34658B /* Pods-TempratureApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TempratureApp-Info.plist"; sourceTree = "<group>"; };
+		E09C6453AD7E98530273095109147B62 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		E0D155C13EAE5D6AD2FEF010DB9F70D5 /* Pods-TempratureAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TempratureAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2AEED7C5E6A90FBC926C4F092E749B5 /* MKBXPEnumeration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPEnumeration.h; path = MKBeaconXProSDK/Classes/MKBXPEnumeration.h; sourceTree = "<group>"; };
+		E2C5A496B03196CC82334C73F32890D7 /* MKBeaconXProSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKBeaconXProSDK-umbrella.h"; sourceTree = "<group>"; };
+		E2EF05E33E296B47F29F059AF195B5AE /* MKBXPCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBXPCentralManager.m; path = MKBeaconXProSDK/Classes/MKBXPCentralManager.m; sourceTree = "<group>"; };
+		E356726E3F78B364516AC56262EA02F9 /* Pods-TempratureAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TempratureAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E38039D3DC3AB8D344769AB5F790C39B /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		E5C84A418F5BE77F83276F4FF7CF33F7 /* MKBXPDataParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBXPDataParser.m; path = MKBeaconXProSDK/Classes/MKBXPDataParser.m; sourceTree = "<group>"; };
+		E94016A37C120274A670B68BC996E266 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		EA2829BF29992E5E1799508DE05E68E4 /* MKBXPAdopter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPAdopter.h; path = MKBeaconXProSDK/Classes/MKBXPAdopter.h; sourceTree = "<group>"; };
+		EAF4261EFF8C93F0D33FDC6F07942A7B /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		EE771006FD74835FD277084B65FB5AFF /* Pods-TempratureApp-TempratureAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TempratureApp-TempratureAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		F0D6DBEF5A11B4B14C595BFBE36FDF92 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		F19A90F89CA4AAD64E2E45A3D0EACEB7 /* MKBXPInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXPInterface.h; path = MKBeaconXProSDK/Classes/MKBXPInterface.h; sourceTree = "<group>"; };
+		F37622E8E3D339A69D5A7A66F683F0D7 /* Pods-TempratureApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TempratureApp-dummy.m"; sourceTree = "<group>"; };
+		F4EA8032EC248D64175ED956FDFDB1CB /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		F6351DCE68B3161535068E7F280149B7 /* Pods-TempratureApp-TempratureAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TempratureApp-TempratureAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FBDAF113600B5671C0B9C7880A4CCB36 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		FC89715495F3F817D8CC2E77146637B3 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		FF92DADA6D39446C2C2D1AB4005694EA /* Pods-TempratureAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TempratureAppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18F7DFBCA3151D501B99FAB68B590C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6D762E7C2835113512D9149994B53F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51DBD06304924397D091FFECC269DA84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3047360C97C8CD58D576D42BF34A50AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9590D3FE7A79CD7CBEE3F346E8C19D4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */,
+				F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5DE8FC9EF60FEE16768A8D12AE16B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBC06FDDCC6611EE7E197CFF48B4665 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBBA61ADAE40B68FD0FE9F296A0A0D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD8E78279AD5C139C9A8FDA0831D7D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00ADA1BDED09AA43AD5772A6A4A201C9 /* Pods-TempratureApp-TempratureAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B307C81B7959F7D4BE7841F6BE019495 /* Pods-TempratureApp-TempratureAppUITests.modulemap */,
+				C8E9668DB2506EA00D025442607C996D /* Pods-TempratureApp-TempratureAppUITests-acknowledgements.markdown */,
+				76C0788D8CF52B6ADBE25A6CEC5739A6 /* Pods-TempratureApp-TempratureAppUITests-acknowledgements.plist */,
+				5A079147F37C611031F800A76681CC64 /* Pods-TempratureApp-TempratureAppUITests-dummy.m */,
+				67FF58B0518F0D71C0DBF50F58EA6D2D /* Pods-TempratureApp-TempratureAppUITests-frameworks.sh */,
+				04FB28E62421B71709C2A1A4D5AAA777 /* Pods-TempratureApp-TempratureAppUITests-Info.plist */,
+				EE771006FD74835FD277084B65FB5AFF /* Pods-TempratureApp-TempratureAppUITests-umbrella.h */,
+				8378A9A606B6F65E5E21879B49CCD255 /* Pods-TempratureApp-TempratureAppUITests.debug.xcconfig */,
+				F6351DCE68B3161535068E7F280149B7 /* Pods-TempratureApp-TempratureAppUITests.release.xcconfig */,
+			);
+			name = "Pods-TempratureApp-TempratureAppUITests";
+			path = "Target Support Files/Pods-TempratureApp-TempratureAppUITests";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E34DCC8E2CF86B8D72232914781A840D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AC4001B822B297552C1C9E0428312D4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7083B7CA92323D7FDA1E29EFA43945EF /* Pods-TempratureApp */,
+				00ADA1BDED09AA43AD5772A6A4A201C9 /* Pods-TempratureApp-TempratureAppUITests */,
+				8B001B0A8CB26A5A761058D0E827ECCE /* Pods-TempratureAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5B3498A363A3DC30C1E00E634DD80EA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				A6D43D4C487928C3DB7F6AE5E85322D2 /* MKBeaconXProSDK.framework */,
+				A77079D42E5E315C600C3FC30681DFED /* Pods_TempratureApp.framework */,
+				2A10A7D37064386C2C2CDEEC113E5291 /* Pods_TempratureApp_TempratureAppUITests.framework */,
+				73DCA19B4D25FB3939124C52973ED4CF /* Pods_TempratureAppTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		697029FD253253CA5FB344C17B15ECD6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBDAF113600B5671C0B9C7880A4CCB36 /* Alamofire.modulemap */,
+				6CE9A31AF657D4A1502888742BF790B8 /* Alamofire-dummy.m */,
+				D34E14F3C4A94884D225078310484BCA /* Alamofire-Info.plist */,
+				7F34116FE5F8D1C53FFF156D3C1B3203 /* Alamofire-prefix.pch */,
+				3129DDAC55322E3330CA8351685BA214 /* Alamofire-umbrella.h */,
+				C58E060032B864DD8CEE4850BAF40EDE /* Alamofire.debug.xcconfig */,
+				49C847A3978BDED14C8CA28A8DD05ADB /* Alamofire.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		6D7EF6E7A641C195419DF878D5E8E59C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA8EDBFB370F0A34A60F2BA7347489B1 /* Alamofire */,
+				CAF7A30816D14230B849D86636039CDA /* MKBeaconXProSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7083B7CA92323D7FDA1E29EFA43945EF /* Pods-TempratureApp */ = {
+			isa = PBXGroup;
+			children = (
+				753E691FC4938E975B0BBA240C3B124F /* Pods-TempratureApp.modulemap */,
+				6404FFE25551AC606B9AC02470254EB7 /* Pods-TempratureApp-acknowledgements.markdown */,
+				2E50EA222081672901A1F95399D29C66 /* Pods-TempratureApp-acknowledgements.plist */,
+				F37622E8E3D339A69D5A7A66F683F0D7 /* Pods-TempratureApp-dummy.m */,
+				68080808E61E8BB6E543F68BBDEBFB3B /* Pods-TempratureApp-frameworks.sh */,
+				DB2C27088C006D1D135B8EC3AA34658B /* Pods-TempratureApp-Info.plist */,
+				6B74CBC625118AF0891AC261E28179BA /* Pods-TempratureApp-umbrella.h */,
+				61964DB45E18EFDED2745BBF3B26CC55 /* Pods-TempratureApp.debug.xcconfig */,
+				692C1D9CED1DF95FE0B3B27F403680B9 /* Pods-TempratureApp.release.xcconfig */,
+			);
+			name = "Pods-TempratureApp";
+			path = "Target Support Files/Pods-TempratureApp";
+			sourceTree = "<group>";
+		};
+		8B001B0A8CB26A5A761058D0E827ECCE /* Pods-TempratureAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				03045FC754475FB4CC289D94A5704B43 /* Pods-TempratureAppTests.modulemap */,
+				E0D155C13EAE5D6AD2FEF010DB9F70D5 /* Pods-TempratureAppTests-acknowledgements.markdown */,
+				B4A14B6EB86293E9ABBDA6300D95ABB8 /* Pods-TempratureAppTests-acknowledgements.plist */,
+				3186AC9B4F7D880EAB82FE1F9073D75D /* Pods-TempratureAppTests-dummy.m */,
+				9D1066043A6DE9650BADF69CD5CE5530 /* Pods-TempratureAppTests-Info.plist */,
+				3AFF696EB9797609150A607F482A356B /* Pods-TempratureAppTests-umbrella.h */,
+				E356726E3F78B364516AC56262EA02F9 /* Pods-TempratureAppTests.debug.xcconfig */,
+				FF92DADA6D39446C2C2D1AB4005694EA /* Pods-TempratureAppTests.release.xcconfig */,
+			);
+			name = "Pods-TempratureAppTests";
+			path = "Target Support Files/Pods-TempratureAppTests";
+			sourceTree = "<group>";
+		};
+		BA8EDBFB370F0A34A60F2BA7347489B1 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				E09C6453AD7E98530273095109147B62 /* AFError.swift */,
+				710546B4C3A4C261522AF193AC6FFEC6 /* Alamofire.swift */,
+				B7E87DD901E7F04889513C96B4787798 /* AlamofireExtended.swift */,
+				290838C9271E1A6D123495AC44C6D231 /* AuthenticationInterceptor.swift */,
+				D5AA37002B8AA7F8CA3E88C92513F720 /* CachedResponseHandler.swift */,
+				0ECF5C41AA60B8DB2E90B4CEE3DC8215 /* Combine.swift */,
+				2D6FEBC164ABA74ADDD9192762C6E86F /* DispatchQueue+Alamofire.swift */,
+				F4EA8032EC248D64175ED956FDFDB1CB /* EventMonitor.swift */,
+				E38039D3DC3AB8D344769AB5F790C39B /* HTTPHeaders.swift */,
+				F0D6DBEF5A11B4B14C595BFBE36FDF92 /* HTTPMethod.swift */,
+				C2C6BE3AABB11F96F42A17FD967390E5 /* MultipartFormData.swift */,
+				2A5BA4DCF3A6F898EFAA0B1F3A735AC5 /* MultipartUpload.swift */,
+				4BCE8D778159297B4C17324F354EF8C4 /* NetworkReachabilityManager.swift */,
+				730CBDF3DDAD20D2F2748321C26590D2 /* Notifications.swift */,
+				D887B75868B7D261A6F111ECCB5BF997 /* OperationQueue+Alamofire.swift */,
+				EAF4261EFF8C93F0D33FDC6F07942A7B /* ParameterEncoder.swift */,
+				C5F7BFA405C849AAA236142A68A826B6 /* ParameterEncoding.swift */,
+				6014E85B6E9015877F66CD555324E1DF /* Protected.swift */,
+				3184FC0D65D41B3847DB07AA668849FD /* RedirectHandler.swift */,
+				4403A65A898D4ECBA377F18C1E3B63E1 /* Request.swift */,
+				5EAB4C6A2BE843BEC1DC342CE512C365 /* RequestInterceptor.swift */,
+				A0EBD900ED51B0FDC44AFF720ADF96EF /* RequestTaskMap.swift */,
+				B3C9E7C2CC6C88CF5C2D2800C12FEB9E /* Response.swift */,
+				B32B0ADC408D9C7FD1C6D0CED724AA48 /* ResponseSerialization.swift */,
+				7449F8571A179CA95B120B356BCD84F5 /* Result+Alamofire.swift */,
+				FC89715495F3F817D8CC2E77146637B3 /* RetryPolicy.swift */,
+				0BEC2739063206A6A0F0629BA98FA787 /* ServerTrustEvaluation.swift */,
+				7C69544F2D0B0C1342EAF29A0D276033 /* Session.swift */,
+				C4172AA5392FC71E6EF8A39CB9A7A813 /* SessionDelegate.swift */,
+				72AC90375CA6D3A9F6FE205E6ED31BA2 /* StringEncoding+Alamofire.swift */,
+				B515700B6457BA64E1858D88956516B9 /* URLConvertible+URLRequestConvertible.swift */,
+				A21038F55EAA1DF8E0991BA27E0EF6D3 /* URLEncodedFormEncoder.swift */,
+				46D3C4B8F93A2AEE6AE028BE07476005 /* URLRequest+Alamofire.swift */,
+				B68785CDC9FBEB8F3878A1E29CFCDA05 /* URLSessionConfiguration+Alamofire.swift */,
+				E94016A37C120274A670B68BC996E266 /* Validation.swift */,
+				697029FD253253CA5FB344C17B15ECD6 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		C2BAFCB1E79C68DB864212C92CDC0BF6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2A4242D961E4E0960EEA53D88B1552C /* MKBeaconXProSDK.modulemap */,
+				38B7B84BCE6EB61B856A94B16152F21D /* MKBeaconXProSDK-dummy.m */,
+				79819D5F620F90768AACA23EB3DEAD68 /* MKBeaconXProSDK-Info.plist */,
+				1802905CE4D0B10E00BA3010C3E6EAD6 /* MKBeaconXProSDK-prefix.pch */,
+				E2C5A496B03196CC82334C73F32890D7 /* MKBeaconXProSDK-umbrella.h */,
+				96CD8D737F87BBA4B1EA8E6AF247E119 /* MKBeaconXProSDK.debug.xcconfig */,
+				6E88AE28FFEFCFA4A5B96D46FCB5FCAD /* MKBeaconXProSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MKBeaconXProSDK";
+			sourceTree = "<group>";
+		};
+		CAF7A30816D14230B849D86636039CDA /* MKBeaconXProSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9C2EA019774AFC9E1F4B8824B0687BBC /* CBPeripheral+MKAdd.h */,
+				51DA2B04EBE1C9D12C1129EE160DA68C /* CBPeripheral+MKAdd.m */,
+				EA2829BF29992E5E1799508DE05E68E4 /* MKBXPAdopter.h */,
+				23DAC45960A195567E6418BFC663446E /* MKBXPAdopter.m */,
+				1CC526415A15AB3A00CE16A6138E9D52 /* MKBXPBaseBeacon.h */,
+				2CBBF2CB79641E1A4890D1694450CA5F /* MKBXPBaseBeacon.m */,
+				8F7E47DE659F5DCA5546AE4301EA72BC /* MKBXPCentralManager.h */,
+				E2EF05E33E296B47F29F059AF195B5AE /* MKBXPCentralManager.m */,
+				2F11B3FD2314FD58CCF03EA2B596F598 /* MKBXPDataParser.h */,
+				E5C84A418F5BE77F83276F4FF7CF33F7 /* MKBXPDataParser.m */,
+				C169104C0F0A3BF2B97870BDB38EC82C /* MKBXPDefines.h */,
+				E2AEED7C5E6A90FBC926C4F092E749B5 /* MKBXPEnumeration.h */,
+				F19A90F89CA4AAD64E2E45A3D0EACEB7 /* MKBXPInterface.h */,
+				1E5535E4C35CDD554E73DD129F4D6420 /* MKBXPInterface.m */,
+				2EDC8EE556E0627B6975BCF0D0BCC996 /* MKBXPInterface+MKConfig.h */,
+				D438E6703E8B95DE693C83195BBC8646 /* MKBXPInterface+MKConfig.m */,
+				96D8C1DAD2A2CAF138920E2C2DC20E35 /* MKBXPNormalDefines.h */,
+				5F676295D6230137152C4AD00D84E8E5 /* MKBXPOperationIDDefines.h */,
+				6D487D40ED7803FA2ED8402770455404 /* MKBXPProtocols.h */,
+				70BFDE4147B9EDB0FD125347B9F4082D /* MKBXPSDKHeader.h */,
+				B8FBA9895FCC0C16F4950861E83ED843 /* MKBXPService.h */,
+				488B1014D97A96AE45A0BADD8B46F621 /* MKBXPTaskOperation.h */,
+				8A3A00D0B2CC57CB3E061501237DFFF1 /* MKBXPTaskOperation.m */,
+				C2BAFCB1E79C68DB864212C92CDC0BF6 /* Support Files */,
+			);
+			name = MKBeaconXProSDK;
+			path = MKBeaconXProSDK;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				6D7EF6E7A641C195419DF878D5E8E59C /* Pods */,
+				5B3498A363A3DC30C1E00E634DD80EA0 /* Products */,
+				3AC4001B822B297552C1C9E0428312D4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E34DCC8E2CF86B8D72232914781A840D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */,
+				222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		155D854698BE8AC0A58D2D3F01C5B44B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE7FE63BF42C975788C094F65ECDD09 /* Pods-TempratureApp-TempratureAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3398496E109AB04258070992BC035DCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E5A2BB9CBE5090C5901526088D6CD3 /* Pods-TempratureAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7385264172E27509C121E5787048B8C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E45AB3DA5C65E6C03B72430E85E847F /* Pods-TempratureApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8070B01910C64B9AFD0DB550EDE38D6B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2462148AC774E7012C7BA896A56D9F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986335F28C10C2F7F137587F27B9B0A8 /* CBPeripheral+MKAdd.h in Headers */,
+				8697B619819E375B72010BD4328C87BF /* MKBeaconXProSDK-umbrella.h in Headers */,
+				207066BF24F5F5E099DBA4EDE4E4BFAB /* MKBXPAdopter.h in Headers */,
+				333A611DE6A403B7D83C424F41F5BF38 /* MKBXPBaseBeacon.h in Headers */,
+				DE777675C04A1789D35B4B5E90225DD7 /* MKBXPCentralManager.h in Headers */,
+				27B24003B33800C43F51EB5FFB6F92AB /* MKBXPDataParser.h in Headers */,
+				7897392A54F24AE971B1956E81F1100F /* MKBXPDefines.h in Headers */,
+				29BB8D3A4CAEF6F3F695FD4349E515E5 /* MKBXPEnumeration.h in Headers */,
+				3CF7C9F2180B1EF4D55D4CD0F2754924 /* MKBXPInterface+MKConfig.h in Headers */,
+				BCBB7EA41F6880EFB8B3BB0EAAEC3063 /* MKBXPInterface.h in Headers */,
+				BE867436C3439DEFD76871E27EB459AA /* MKBXPNormalDefines.h in Headers */,
+				C6D2E6BC11C9F3493E8E8238F5235BFE /* MKBXPOperationIDDefines.h in Headers */,
+				746E8CC40D3E44077ABE001B4FA84623 /* MKBXPProtocols.h in Headers */,
+				2B57D9EB3C62D5254BDC93078ECA3CBB /* MKBXPSDKHeader.h in Headers */,
+				F467FDFD289BB98537A0BEAE37087A3A /* MKBXPService.h in Headers */,
+				1F905AD1C0701AFB0E7816174E14550B /* MKBXPTaskOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1DAAD5F611488380CF41F1AF71D369E3 /* Pods-TempratureAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F803157960497E767E43F7C37BB1E8AE /* Build configuration list for PBXNativeTarget "Pods-TempratureAppTests" */;
+			buildPhases = (
+				3398496E109AB04258070992BC035DCF /* Headers */,
+				F6DBF64AFE66C61A05992AFB61619256 /* Sources */,
+				51DBD06304924397D091FFECC269DA84 /* Frameworks */,
+				7EAE594472910C77E17F3BAE12DE9E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE5CC967BCED9B0CCA5A7C9336F5F81E /* PBXTargetDependency */,
+			);
+			name = "Pods-TempratureAppTests";
+			productName = "Pods-TempratureAppTests";
+			productReference = 73DCA19B4D25FB3939124C52973ED4CF /* Pods_TempratureAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3A0DE3C915E2D76BD17C04AF9F299DD6 /* Pods-TempratureApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744CB41DE96BD01D31999A1D9656C8B6 /* Build configuration list for PBXNativeTarget "Pods-TempratureApp" */;
+			buildPhases = (
+				7385264172E27509C121E5787048B8C9 /* Headers */,
+				E546B9C0C35808DDA77C8BCFAAF576FB /* Sources */,
+				18F7DFBCA3151D501B99FAB68B590C80 /* Frameworks */,
+				72910DCD830B64FE042B8553A4762B75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C0C1B75B0F66D33FAA183C184E8461F /* PBXTargetDependency */,
+				622FC68CFF7761E220BF5418BCFE718C /* PBXTargetDependency */,
+			);
+			name = "Pods-TempratureApp";
+			productName = "Pods-TempratureApp";
+			productReference = A77079D42E5E315C600C3FC30681DFED /* Pods_TempratureApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		751EBD1620CA9434EB24F0463D82136A /* Pods-TempratureApp-TempratureAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FEFFB2974E423228C0586520284BE40 /* Build configuration list for PBXNativeTarget "Pods-TempratureApp-TempratureAppUITests" */;
+			buildPhases = (
+				155D854698BE8AC0A58D2D3F01C5B44B /* Headers */,
+				1991AD61688EF88C7A9E50F12AF3DC40 /* Sources */,
+				DA5DE8FC9EF60FEE16768A8D12AE16B9 /* Frameworks */,
+				103C23F358564F406BA6A288516431B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9855F4D296380112447E6A9BA8CD3FB2 /* PBXTargetDependency */,
+				899BCC6BCA5E774B3A0042CCB6F17D88 /* PBXTargetDependency */,
+			);
+			name = "Pods-TempratureApp-TempratureAppUITests";
+			productName = "Pods-TempratureApp-TempratureAppUITests";
+			productReference = 2A10A7D37064386C2C2CDEEC113E5291 /* Pods_TempratureApp_TempratureAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A9E5C5865BA3AB6A73C668ADCCB9C7FC /* MKBeaconXProSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD02542AE593EE3B2E91813FE654FEA7 /* Build configuration list for PBXNativeTarget "MKBeaconXProSDK" */;
+			buildPhases = (
+				D2462148AC774E7012C7BA896A56D9F8 /* Headers */,
+				B21AA598395B67F52D1EAA1D0CBFC5A6 /* Sources */,
+				DBBA61ADAE40B68FD0FE9F296A0A0D5F /* Frameworks */,
+				B8C2E5CDF93D97285C9CD271D432992F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKBeaconXProSDK;
+			productName = MKBeaconXProSDK;
+			productReference = A6D43D4C487928C3DB7F6AE5E85322D2 /* MKBeaconXProSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				8070B01910C64B9AFD0DB550EDE38D6B /* Headers */,
+				2C8326877F6A9617C2FBE9BD15D95B59 /* Sources */,
+				9590D3FE7A79CD7CBEE3F346E8C19D4D /* Frameworks */,
+				9BCA7D105D531AE5DAF34FB86A2E623A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5B3498A363A3DC30C1E00E634DD80EA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				A9E5C5865BA3AB6A73C668ADCCB9C7FC /* MKBeaconXProSDK */,
+				3A0DE3C915E2D76BD17C04AF9F299DD6 /* Pods-TempratureApp */,
+				751EBD1620CA9434EB24F0463D82136A /* Pods-TempratureApp-TempratureAppUITests */,
+				1DAAD5F611488380CF41F1AF71D369E3 /* Pods-TempratureAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		103C23F358564F406BA6A288516431B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72910DCD830B64FE042B8553A4762B75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAE594472910C77E17F3BAE12DE9E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCA7D105D531AE5DAF34FB86A2E623A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C2E5CDF93D97285C9CD271D432992F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1991AD61688EF88C7A9E50F12AF3DC40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9711C5417BAA15AED562350223489D9 /* Pods-TempratureApp-TempratureAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C8326877F6A9617C2FBE9BD15D95B59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */,
+				C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */,
+				C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */,
+				72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */,
+				DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */,
+				ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */,
+				0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */,
+				27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */,
+				6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */,
+				91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */,
+				013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */,
+				45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */,
+				D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */,
+				19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */,
+				8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */,
+				0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */,
+				4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */,
+				D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */,
+				218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */,
+				666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */,
+				EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */,
+				6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */,
+				6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */,
+				C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */,
+				911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */,
+				66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */,
+				9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */,
+				47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */,
+				6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */,
+				381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */,
+				212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */,
+				9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */,
+				D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */,
+				F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21AA598395B67F52D1EAA1D0CBFC5A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11197178500F4C14F06EE2D79BFCC8FE /* CBPeripheral+MKAdd.m in Sources */,
+				B785D518621AF86BFB6F49DCED182E67 /* MKBeaconXProSDK-dummy.m in Sources */,
+				7DDD78EE37D1502EEA9CF443206ADE7E /* MKBXPAdopter.m in Sources */,
+				D267D8CFC19A65ED6841ACF59A1A6B3B /* MKBXPBaseBeacon.m in Sources */,
+				5C8B63CDD7B478272B2DF0801530BF8B /* MKBXPCentralManager.m in Sources */,
+				FE96572F8D56DD0C4DDAAC69F5559619 /* MKBXPDataParser.m in Sources */,
+				B6E96B02E5CE0D37259372E11596C69C /* MKBXPInterface+MKConfig.m in Sources */,
+				775E258C7F890D5AD93B2901905B9C07 /* MKBXPInterface.m in Sources */,
+				13DAAE70AB13FF109F337CD7E3B4B635 /* MKBXPTaskOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E546B9C0C35808DDA77C8BCFAAF576FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98CA575A96C2E4F9FA5F2703CD75352 /* Pods-TempratureApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DBF64AFE66C61A05992AFB61619256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6444C143EA2E88E8A3D00D1575DD31F /* Pods-TempratureAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C0C1B75B0F66D33FAA183C184E8461F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = DA6B3931EE81742DF5EE6AD9ED7D4BC0 /* PBXContainerItemProxy */;
+		};
+		622FC68CFF7761E220BF5418BCFE718C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MKBeaconXProSDK;
+			target = A9E5C5865BA3AB6A73C668ADCCB9C7FC /* MKBeaconXProSDK */;
+			targetProxy = BD2918AB1DB4B81F4A9C33CD7572DA6A /* PBXContainerItemProxy */;
+		};
+		899BCC6BCA5E774B3A0042CCB6F17D88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MKBeaconXProSDK;
+			target = A9E5C5865BA3AB6A73C668ADCCB9C7FC /* MKBeaconXProSDK */;
+			targetProxy = 4DB298649F508B9C76E506E14F89874F /* PBXContainerItemProxy */;
+		};
+		9855F4D296380112447E6A9BA8CD3FB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 129D483C52EAC8FA187FE674CCAC0290 /* PBXContainerItemProxy */;
+		};
+		BE5CC967BCED9B0CCA5A7C9336F5F81E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TempratureApp";
+			target = 3A0DE3C915E2D76BD17C04AF9F299DD6 /* Pods-TempratureApp */;
+			targetProxy = B2A74A5A6A9990CDAD54D91854E9D8AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34994516660FBABB9D89BCEB72C9E2C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF92DADA6D39446C2C2D1AB4005694EA /* Pods-TempratureAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TempratureAppTests/Pods-TempratureAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TempratureAppTests/Pods-TempratureAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48FD2B4E815CEB933B18D313E9E9EF64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49C847A3978BDED14C8CA28A8DD05ADB /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4EBCB9A353B63398F7EEF9F1D2AE7891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 692C1D9CED1DF95FE0B3B27F403680B9 /* Pods-TempratureApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TempratureApp/Pods-TempratureApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TempratureApp/Pods-TempratureApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58783E21DFFA61F756F7699DDF970595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96CD8D737F87BBA4B1EA8E6AF247E119 /* MKBeaconXProSDK.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MKBeaconXProSDK/MKBeaconXProSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MKBeaconXProSDK/MKBeaconXProSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MKBeaconXProSDK/MKBeaconXProSDK.modulemap";
+				PRODUCT_MODULE_NAME = MKBeaconXProSDK;
+				PRODUCT_NAME = MKBeaconXProSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		68C62CC0FC5D548E0B1BEEBBA0015794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E356726E3F78B364516AC56262EA02F9 /* Pods-TempratureAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TempratureAppTests/Pods-TempratureAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TempratureAppTests/Pods-TempratureAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A4474D88814281E4161149F345102D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E88AE28FFEFCFA4A5B96D46FCB5FCAD /* MKBeaconXProSDK.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MKBeaconXProSDK/MKBeaconXProSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MKBeaconXProSDK/MKBeaconXProSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MKBeaconXProSDK/MKBeaconXProSDK.modulemap";
+				PRODUCT_MODULE_NAME = MKBeaconXProSDK;
+				PRODUCT_NAME = MKBeaconXProSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DE7769E8BFE1290A169C2A75FA433101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6351DCE68B3161535068E7F280149B7 /* Pods-TempratureApp-TempratureAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TempratureApp-TempratureAppUITests/Pods-TempratureApp-TempratureAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TempratureApp-TempratureAppUITests/Pods-TempratureApp-TempratureAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E73BFB7433831CF292FADF6B2CB7AC3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C58E060032B864DD8CEE4850BAF40EDE /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB63B64889C4FE33F3D49FC84CED0B3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61964DB45E18EFDED2745BBF3B26CC55 /* Pods-TempratureApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TempratureApp/Pods-TempratureApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TempratureApp/Pods-TempratureApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F70F2CDC671C5186C84699297844F185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8378A9A606B6F65E5E21879B49CCD255 /* Pods-TempratureApp-TempratureAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TempratureApp-TempratureAppUITests/Pods-TempratureApp-TempratureAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TempratureApp-TempratureAppUITests/Pods-TempratureApp-TempratureAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FEFFB2974E423228C0586520284BE40 /* Build configuration list for PBXNativeTarget "Pods-TempratureApp-TempratureAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70F2CDC671C5186C84699297844F185 /* Debug */,
+				DE7769E8BFE1290A169C2A75FA433101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744CB41DE96BD01D31999A1D9656C8B6 /* Build configuration list for PBXNativeTarget "Pods-TempratureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB63B64889C4FE33F3D49FC84CED0B3D /* Debug */,
+				4EBCB9A353B63398F7EEF9F1D2AE7891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E73BFB7433831CF292FADF6B2CB7AC3B /* Debug */,
+				48FD2B4E815CEB933B18D313E9E9EF64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F803157960497E767E43F7C37BB1E8AE /* Build configuration list for PBXNativeTarget "Pods-TempratureAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68C62CC0FC5D548E0B1BEEBBA0015794 /* Debug */,
+				34994516660FBABB9D89BCEB72C9E2C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD02542AE593EE3B2E91813FE654FEA7 /* Build configuration list for PBXNativeTarget "MKBeaconXProSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58783E21DFFA61F756F7699DDF970595 /* Debug */,
+				8A4474D88814281E4161149F345102D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
